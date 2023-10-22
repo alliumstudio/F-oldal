@@ -15,8 +15,8 @@ header {
     padding: 20px;
 }
 
-header > img{
-    background: radial-gradient(#7b4382, #8b5aaf);
+header>img {
+    background: radial-gradient(#8b4aaf, #8b5aaf);
     border-radius: 50%;
 }
 
