@@ -1,3 +1,17 @@
+/*body*/
 body {
-    background-color: #af5aa5;;
+    background-color: #af5aa599;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*header*/
+header {
+    background-color: #8b5aaf;
+    color: #fff;
+    
+    padding: 20px;
 }
