@@ -6,6 +6,30 @@ body {
     padding: 0;
 }
 
+@media (min-width: 1025px) {
+
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
+        padding: 20px;
+    }
+
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 3.2%;
+        height: 3.2%;
+    }
+
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 5px; 
+        font-size: 300%;
+        text-shadow: 2px 2px 6px #5d3e76;
+        
+    }
+}
 
 /*Tablet, kisebb laptopok, kompaktmonitorok*/
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -22,12 +46,14 @@ body {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
         width: 2%;
-        height: 2%
+        height: 2%;
     }
 
     header>#cím{
-        display: inline;
+        display: inline-block;
+        margin: 1px 10px 0px 5px;
         font-size: 80%;
+        text-shadow: 2px 2px 6px #5d3e76;
     }
 
 
@@ -45,9 +71,17 @@ body {
         padding: 20px;
     }
 
-    header>img {
+    header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
+        width: 12%;
+        height: 12%; 
     }
 
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 3px;
+        font-size: 250%;
+        text-shadow: 2px 2px 6px #5d3e76;
+    }
 }
