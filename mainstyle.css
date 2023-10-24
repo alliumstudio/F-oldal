@@ -81,7 +81,7 @@ body {
     header>#cím{
         display: inline-block;
         margin: 1px 10px 0px 3px;
-        font-size: 250%;
+        font-size: 200%;
         text-shadow: 2px 2px 6px #5d3e76;
     }
 }
