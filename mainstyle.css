@@ -31,7 +31,7 @@ body {
     }
 }
 
-/*Tablet, kisebb laptopok, kompaktmonitorok*/
+/*Tablet, kisebb laptopok, kompakt monitorok*/
 @media (min-width: 769px) and (max-width: 1024px) {
 
     /*header*/
@@ -61,9 +61,36 @@ body {
 
 
 
-/*tablet nézet*/
+/*kisebb tablet, telefon, böngészőablakok*/
 @media (max-width: 768px) {
 
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
+        padding: 20px;
+    }
+
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 12%;
+        height: 12%; 
+    }
+
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 3px;
+        font-size: 200%;
+        text-shadow: 2px 2px 6px #5d3e76;
+    }
+
+
+}
+
+
+/*telefon*/
+@media (max-width: 480px) {
     /*header*/
     header {
         background-color: #8b5aaf;
