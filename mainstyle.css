@@ -7,17 +7,47 @@ body {
 }
 
 
+/*Tablet, kisebb laptopok, kompaktmonitorok*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
+        padding: 10px;
+    }
+
+    /*headerbeli kép mérete és kinézete*/
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 2%;
+        height: 2%
+    }
+
+    header>#cím{
+        display: inline;
+        font-size: 80%;
+    }
 
 
-/*header*/
-header {
-    background-color: #8b5aaf;
-    color: #fff;
+}
+
+
+
+/*tablet nézet*/
+@media (max-width: 768px) {
+
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
         padding: 20px;
-}
+    }
 
-header>img {
-    background: radial-gradient(#8b4aaf, #8b5aaf);
-    border-radius: 50%;
-}
+    header>img {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+    }
 
+}
