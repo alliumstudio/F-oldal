@@ -6,7 +6,32 @@ body {
     padding: 0;
 }
 
+/*Gépi nézet*/
+@media (min-width: 1025px) {
 
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
+        padding: 10px;
+    }
+
+    /*headerbeli kép mérete és kinézete*/
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 5%;
+        height: 5%
+    }
+
+    header>#cím{
+        display: inline;
+        
+        font-size: 250%;
+    }
+
+
+}
 /*Tablet, kisebb laptopok, kompaktmonitorok*/
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -42,12 +67,20 @@ body {
     header {
         background-color: #8b5aaf;
         color: #fff;
-        padding: 20px;
+        padding: 10px 10px 5px 5px;
     }
 
     header>img {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
+        width: 20%;
+        height: 20%
     }
+
+    header>#cím{
+        display: inline;
+        font-size: 120%;
+    }
+
 
 }
