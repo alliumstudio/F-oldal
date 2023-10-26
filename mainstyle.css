@@ -6,13 +6,17 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
 /*Gépi nézet*/
+=======
+>>>>>>> aa3ccc859b2130ce0ef9394b6ad88709877ed18f
 @media (min-width: 1025px) {
 
     /*header*/
     header {
         background-color: #8b5aaf;
         color: #fff;
+<<<<<<< HEAD
         padding: 10px;
     }
 
@@ -33,6 +37,28 @@ body {
 
 }
 /*Tablet, kisebb laptopok, kompaktmonitorok*/
+=======
+        padding: 20px;
+    }
+
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 3.2%;
+        height: 3.2%;
+    }
+
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 5px; 
+        font-size: 300%;
+        text-shadow: 2px 2px 6px #5d3e76;
+        
+    }
+}
+
+/*Tablet, kisebb laptopok, kompakt monitorok*/
+>>>>>>> aa3ccc859b2130ce0ef9394b6ad88709877ed18f
 @media (min-width: 769px) and (max-width: 1024px) {
 
     /*header*/
@@ -47,12 +73,14 @@ body {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
         width: 2%;
-        height: 2%
+        height: 2%;
     }
 
     header>#cím{
-        display: inline;
+        display: inline-block;
+        margin: 1px 10px 0px 5px;
         font-size: 80%;
+        text-shadow: 2px 2px 6px #5d3e76;
     }
 
 
@@ -60,7 +88,7 @@ body {
 
 
 
-/*tablet nézet*/
+/*kisebb tablet, telefon, böngészőablakok*/
 @media (max-width: 768px) {
 
     /*header*/
@@ -70,9 +98,10 @@ body {
         padding: 10px 10px 5px 5px;
     }
 
-    header>img {
+    header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
+<<<<<<< HEAD
         width: 20%;
         height: 20%
     }
@@ -83,4 +112,43 @@ body {
     }
 
 
+=======
+        width: 12%;
+        height: 12%; 
+    }
+
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 3px;
+        font-size: 200%;
+        text-shadow: 2px 2px 6px #5d3e76;
+    }
+
+
+}
+
+
+/*telefon*/
+@media (max-width: 480px) {
+    /*header*/
+    header {
+        background-color: #8b5aaf;
+        color: #fff;
+        padding: 20px;
+    }
+
+    header>img#allium {
+        background: radial-gradient(#8b4aaf, #8b5aaf);
+        border-radius: 50%;
+        width: 12%;
+        height: 12%; 
+    }
+
+    header>#cím{
+        display: inline-block;
+        margin: 1px 10px 0px 3px;
+        font-size: 200%;
+        text-shadow: 2px 2px 6px #5d3e76;
+    }
+>>>>>>> aa3ccc859b2130ce0ef9394b6ad88709877ed18f
 }
