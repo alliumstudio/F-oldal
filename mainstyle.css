@@ -10,28 +10,54 @@ body {
 
 /*Gépi nézet*/
 @media (min-width: 1025px) {
+
     /*header*/
     header {
         background-color: #8b5aaf;
         color: #fff;
         padding: 20px;
     }
+
+    /*kép*/
     header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
         width: 4%;
         height: 4%;
     }
-    header>#cím{
+
+    /*cím*/
+    header>#cím {
         display: inline-block;
-        margin: 1px 10px 0px 5px; 
+        margin: 1px 10px 0% 5px;
         font-size: 230%;
         text-shadow: 2px 2px 6px #5d3e76;
-        
+
     }
+
+    /*menü*/
+    .custom-menu {
+        background-color: #333;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .custom-menu a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 5px 0;
+        transition: background-color 0.3s;
+    }
+
+    .custom-menu a:hover {
+        background-color: #555;
+    }
+
+
+
 }
-
-
 
 /*Tablet, kisebb laptopok, kompakt monitorok*/
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -42,6 +68,7 @@ body {
         color: #fff;
         padding: 10px;
     }
+
     /*headerbeli kép mérete és kinézete*/
     header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
@@ -49,7 +76,8 @@ body {
         width: 2%;
         height: 2%;
     }
-    header>#cím{
+
+    header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 5px;
         font-size: 80%;
@@ -68,13 +96,15 @@ body {
         color: #fff;
         padding: 20px;
     }
+
     header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
         width: 12%;
-        height: 12%; 
+        height: 12%;
     }
-    header>#cím{
+
+    header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 3px;
         font-size: 200%;
@@ -88,6 +118,7 @@ body {
 
 /*telefon*/
 @media (max-width: 480px) {
+
     /*header*/
     header {
         background-color: #8b5aaf;
@@ -99,10 +130,10 @@ body {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
         width: 12%;
-        height: 12%; 
+        height: 12%;
     }
 
-    header>#cím{
+    header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 3px;
         font-size: 150%;
@@ -110,4 +141,15 @@ body {
     }
 }
 
+/*tartalom*/
+main {
+    padding: 20px;
+}
 
+/*tartalom külső része*/
+.manga-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
