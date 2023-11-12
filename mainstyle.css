@@ -176,7 +176,7 @@ button {
     background: linear-gradient(#5f3277, #8b5aaf);
     width: 100%;
     padding: 4px;
-    color: white;
+
     text-shadow: 2px 2px 6px #5d3e76;
 }
 
@@ -189,4 +189,8 @@ button:hover{
     margin-top: 16px;
 }
 
+#gomb {
+    text-decoration: none;
+    color: white;
+}
 
