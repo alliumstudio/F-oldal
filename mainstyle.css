@@ -1,3 +1,19 @@
+
+/*tartalom*/
+main {
+    padding: 20px;
+}
+
+/*tartalom külső része*/
+.manga-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------Responsive--------------------------------------------------------*/
+
 /*Gépi nézet*/
 @media (min-width: 1025px) {
 
@@ -6,14 +22,18 @@
         margin: 0;
         padding: 0;
         background-image: url('img/hatternagy.png');
-        background-size: auto;
+        background-size: cover;
         background-repeat: round;
-        background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: Arial, sans-serif;
     }
 
-    
+    /*telefonos nézet*/
+    #android {
+        display: none;
+    }
+
+    /*gépi nézet*/
     #pc {
         display: visible;
     }
@@ -24,7 +44,7 @@
         color: #fff;
     }
 
-    /*kép*/
+    /*headerben lévő kép*/
 
     header>img#allium {
         background: radial-gradient(#7b4f9b, #7a4f99);
@@ -34,7 +54,7 @@
         margin: 10px 0px 0px 10px;
     }
 
-    /*cím*/
+    /*headerben lévő cím*/
     header>#cím {
         display: inline-block;
         margin: 1px 10px 0% 5px;
@@ -65,6 +85,7 @@
         background-color: #555;
     }
 
+    /*menü elhelyezkedés (sorok felbontása)*/
     menu,
     ul {
         display: flex;
@@ -75,6 +96,39 @@
     }
 
 
+    /*menüben elhelyezkedés (egymás mellett)*/
+    li {
+        flex-grow: 1;
+        border-right: 1px solid black;
+    }
+
+    /*gomb*/
+    button {
+        border: none;
+        border-left-style: none;
+        background: linear-gradient(#5f3277, #8b5aaf);
+        width: 100%;
+        padding: 4px;
+
+        text-shadow: 2px 2px 6px #5d3e76;
+    }
+
+    /*gomb hover animáció*/
+    button:hover {
+        background: linear-gradient(#8b5aaf, #5f3277);
+    }
+
+    /*elválasztó vonal (a gombok felet)*/
+    #sor {
+        border-top: 1px solid black;
+        margin-top: 16px;
+    }
+
+    /*gombok közös beállítása*/
+    #gomb {
+        text-decoration: none;
+        color: white;
+    }
 
 }
 
@@ -92,6 +146,12 @@
         font-family: Arial, sans-serif;
     }
 
+    /*telefonos nézet*/
+    #android {
+        display: none;
+    }
+
+    /*gépi nézet*/
     #pc {
         display: visible;
     }
@@ -111,6 +171,7 @@
         height: 2%;
     }
 
+    /*headerben lévő szöveg (cím)*/
     header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 5px;
@@ -126,6 +187,7 @@
         padding: 10px;
     }
 
+    /*menü lévő link*/
     .custom-menu a {
         color: #fff;
         text-decoration: none;
@@ -134,10 +196,12 @@
         transition: background-color 0.3s;
     }
 
+    /*menüben lévő link hover animáció*/
     .custom-menu a:hover {
         background-color: #555;
     }
 
+    /*menü elhelyezkedés (sorok felbontása)*/
     menu,
     ul {
         display: flex;
@@ -147,12 +211,13 @@
         margin-top: 0px;
     }
 
-
+    /*menüben elhelyezkedés (egymás mellett)*/
     li {
         flex-grow: 1;
         border-right: 1px solid black;
     }
 
+    /*gomb*/
     button {
         border: none;
         border-left-style: none;
@@ -163,15 +228,18 @@
         text-shadow: 2px 2px 6px #5d3e76;
     }
 
+    /*gomb hover animáció*/
     button:hover {
         background: linear-gradient(#8b5aaf, #5f3277);
     }
 
+    /*elválasztó vonal (a gombok felet)*/
     #sor {
         border-top: 1px solid black;
         margin-top: 16px;
     }
 
+    /*gombok közös beállítása*/
     #gomb {
         text-decoration: none;
         color: white;
@@ -183,6 +251,16 @@
 /*kisebb tablet, telefon, böngészőablakok*/
 @media (max-width: 768px) {
 
+    /*telefonos nézet*/
+    #pc {
+        display: none;
+    }
+
+    /*gépi nézet*/
+    #android {
+        display: visible;
+    }
+
     /*header*/
     header {
         background-color: #8b5aaf;
@@ -190,6 +268,7 @@
         padding: 20px;
     }
 
+    /*headerben lévő kép*/
     header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
@@ -197,6 +276,7 @@
         height: 12%;
     }
 
+    /*headerben lévő szöveg(cím)*/
     header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 3px;
@@ -266,6 +346,16 @@
 /*telefon*/
 @media (max-width: 480px) {
 
+    /*telefonos nézet*/
+    #android {
+        display: visible;
+    }
+
+    /*gépi nézet*/
+    #pc {
+        display: none;
+    }
+
     /*header*/
     header {
         background-color: #8b5aaf;
@@ -273,6 +363,7 @@
         padding: 20px;
     }
 
+    /*headerben lévő kép*/
     header>img#allium {
         background: radial-gradient(#8b4aaf, #8b5aaf);
         border-radius: 50%;
@@ -280,6 +371,7 @@
         height: 12%;
     }
 
+    /*headerben lévő szöveg(cím)*/
     header>#cím {
         display: inline-block;
         margin: 1px 10px 0px 3px;
@@ -287,7 +379,7 @@
         text-shadow: 2px 2px 6px #5d3e76;
     }
 
-        /*menü*/
+    /*menü*/
     .custom-menu {
         background-color: #333;
         color: #fff;
@@ -295,6 +387,7 @@
         padding: 10px;
     }
 
+    /*menüben lévő link*/
     .custom-menu a {
         color: #fff;
         text-decoration: none;
@@ -303,16 +396,28 @@
         transition: background-color 0.3s;
     }
 
+    /*menüben lévő link hover animáció*/
     .custom-menu a:hover {
         background-color: #555;
     }
 
+    /*menü elhelyezkedés (sorok felbontása)*/
+    menu,
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        width: 30%;
+        margin-top: 0px;
+    }
 
+    /*menüben elhelyezkedés (egymás mellett)*/
     li {
         flex-grow: 1;
         border-right: 1px solid black;
     }
 
+    /*gomb*/
     button {
         border: none;
         border-left-style: none;
@@ -323,31 +428,20 @@
         text-shadow: 2px 2px 6px #5d3e76;
     }
 
+    /*gomb hover animáció*/
     button:hover {
         background: linear-gradient(#8b5aaf, #5f3277);
     }
 
+    /*elválasztó vonal (a gombok felet)*/
     #sor {
         border-top: 1px solid black;
         margin-top: 16px;
     }
 
+    /*gomb közös beállítás*/
     #gomb {
         text-decoration: none;
         color: white;
     }
 }
-
-/*tartalom*/
-main {
-    padding: 20px;
-}
-
-/*tartalom külső része*/
-.manga-container {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
